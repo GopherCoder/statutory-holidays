@@ -1,0 +1,28 @@
+Redis 构建节假日 API
+使用指南
+18 Dec 2018
+
+XieWei
+
+1156143589@qq.com
+
+https://www.zhihu.com/people/wu-xiao-shen-16/activities
+
+WeChat: wuxiao_shen
+
+* 说明
+
+* 说明
+- 是个什么东西？
+
+* 设计
+
+* 设计
+- 如何存储， 如何选择基本数据结构：List，Hash
+- 如何查找？
+
+* 结尾
+
+* 结尾
+- 思考？
+
