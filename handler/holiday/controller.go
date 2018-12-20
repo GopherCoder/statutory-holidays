@@ -9,6 +9,9 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+/*
+HSCAN history_holidays_map 0 MATCH *2019*
+*/
 func GetHolidaysHandler(c *gin.Context) {
 	var params GetHolidaysParams
 	if err := c.ShouldBindQuery(&params); err != nil {
@@ -38,3 +41,8 @@ func GetHolidaysHandler(c *gin.Context) {
 	}
 
 }
+
+// HSCAN
+func GetHolidaysHscanHandler(c *gin.Context) {}
+
+func CountNumberHandler(c *gin.Context) {}

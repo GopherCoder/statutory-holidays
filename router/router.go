@@ -1,6 +1,7 @@
 package router
 
 import (
+	"net/http"
 	"statutory-holidays/handler/holiday"
 
 	"github.com/gin-gonic/gin"
@@ -18,5 +19,19 @@ func (r *Router) InitRouter(g *gin.Engine, handler ...gin.HandlerFunc) *gin.Engi
 	{
 		holiday.RegisterHoliday(holidays)
 	}
+	{
+		g.GET("", func(context *gin.Context) {
+			context.JSON(http.StatusOK, fetchAllPath(g))
+		})
+	}
 	return g
+}
+
+func fetchAllPath(g *gin.Engine) []string {
+	routers := g.Routes()
+	var paths []string
+	for _, router := range routers {
+		paths = append(paths, router.Path)
+	}
+	return paths
 }

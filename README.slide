@@ -1,13 +1,17 @@
 Redis 构建节假日 API
 使用指南
 18 Dec 2018
+Tags: redis, restfulAPI, gin
 
 XieWei
 
+邮箱:
 1156143589@qq.com
 
+知乎:
 https://www.zhihu.com/people/wu-xiao-shen-16/activities
 
+微信:
 WeChat: wuxiao_shen
 
 * 说明
@@ -15,11 +19,36 @@ WeChat: wuxiao_shen
 * 说明
 - 是个什么东西？
 
+.link http://localhost:8080/v1/api/holiday/holidays?year=2019
+
+* RESTFUL API
+
+* RESTFUL API
+
+- 一种软件架构
+- 实现客户端和服务端资源的交互
+
+    HTTP METHOD
+    HTTP HEADER
+    HTTP CODE
+
+.link https://api.github.com/
+.link http://www.ruanyifeng.com/blog/2018/10/restful-api-best-practices.html
+
 * 设计
 
 * 设计
+- redis 复习
+- redis go 版本的客户端的使用
 - 如何存储， 如何选择基本数据结构：List，Hash
 - 如何查找？
+
+* GIN
+
+* GIN的使用
+- 基本使用
+- HTTP METHOD
+- HTTP CODE
 
 * 结尾
 
