@@ -44,3 +44,16 @@ table three
 
 先本地启动 redis 服务。
 
+其他接口：
+
+```
+
+// 使用HSCAN 获取某年的节假日
+
+GET /v1/api/holiday/years/:year
+
+// 统计某年的节假日总天数
+
+GET /v1/api/holiday/holidays/counts/:year
+
+```
