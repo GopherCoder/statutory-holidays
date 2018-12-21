@@ -90,3 +90,17 @@ func Count(value string) int {
 	return int(right.Sub(left).Hours()/24) + 1
 
 }
+
+func KeyHandler(value string) []string {
+	/*
+		index: 0  : ch_name
+		index: 1  : en_name
+	*/
+	stringList := strings.Split(value, ":")
+	index, _ := strconv.Atoi(stringList[1])
+	var result []string
+	result = append(result, history.ChHolidays[index])
+	result = append(result, history.EnHolidays[index])
+	return result
+
+}
